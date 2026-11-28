@@ -4,11 +4,13 @@ rates = {
     "heavy vehicle": 100,
 }
 
+v_number = input("Vehicle number: ")
 v_type = input("Vehicle type (Two-wheeler / Four-wheeler / Heavy vehicle): ")
 hours = float(input("Hours parked: "))
 
 fee = rates[v_type] * hours
 
+print("\nVehicle Number:", v_number)
 print("Vehicle Type:", v_type.title())
 print("Duration (hrs):", hours)
 print("Total Fee: Rs.", fee)
